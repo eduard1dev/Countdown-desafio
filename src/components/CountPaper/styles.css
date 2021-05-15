@@ -1,0 +1,71 @@
+.containerCount{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.upperCountPaper{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(236, 21%, 20%);
+    height: 50%;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.upperCountPaper span{
+    letter-spacing: normal;
+    position: absolute;
+    bottom: -64%;
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
+    color: hsl(345, 95%, 64%);
+}
+
+.lowerCountPaper{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(236, 21%, 26%);
+    height: 50%;
+    width: 100%;
+    border-radius: 0px 0px 10px 10px;
+    overflow: hidden;
+}
+
+.lowerCountPaper span{
+    letter-spacing: normal;
+    position: absolute;
+    top: -65%;
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
+    color: hsl(345, 95%, 68%);
+}
+
+.ballDetailLeft{
+    position: absolute;
+    left: -5%;
+    height: 10%;
+    width: 10%;
+    background-color: hsl(234, 17%, 12%);
+    border-radius: 0px 10px 10px 0px;
+}
+
+.ballDetailRight{
+    position: absolute;
+    right: -5%;
+    height: 10%;
+    width: 10%;
+    background-color: hsl(234, 17%, 12%);
+    border-radius: 10px 0px 0px 10px;
+}
