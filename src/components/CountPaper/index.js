@@ -1,22 +1,31 @@
 import React from 'react'
 
-import './styles.css'
+import styles from './styles.module.css'
 
-export default function CountPaper(){
+export default function CountPaper(props){
+
+
     return (
-        <div className='containerCount'>
-            <div className='upperCountPaper'>
-                <span>
-                    15
+        <div className={styles.container}>
+            <div className={styles.containerCount}>
+                <div className={styles.upperCountPaper}>
+                    <span>
+                        {props.value}
+                    </span>
+                </div>
+                <div className={styles.lowerCountPaper}>
+                    <span>
+                        {props.value}
+                    </span>
+                </div>
+                <div className={styles.ballDetailLeft}/>
+                <div className={styles.ballDetailRight} />
+            </div>
+            <div>
+                <span className={styles.timeText}>
+                    {props.title}
                 </span>
             </div>
-            <div className='lowerCountPaper'>
-                <span>
-                    15
-                </span>
-            </div>
-            <div className='ballDetailLeft' />
-            <div className='ballDetailRight' />
         </div>
     )
 }

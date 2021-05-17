@@ -1,12 +1,23 @@
+*{
+    font-family: 'Red Hat Text', serif;;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .containerCount{
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 100px;
-    width: 100px;
+    height: 120px;
+    width: 120px;
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    margin-bottom: 15px;
 }
 
 .upperCountPaper{
@@ -22,12 +33,13 @@
 
 .upperCountPaper span{
     letter-spacing: normal;
-    position: absolute;
-    bottom: -64%;
-    font-size: 3rem;
+    font-size: 4rem;
     margin: 0;
     padding: 0;
     color: hsl(345, 95%, 64%);
+    line-height: 0;
+    position: absolute;
+    top: 60px;
 }
 
 .lowerCountPaper{
@@ -44,12 +56,13 @@
 
 .lowerCountPaper span{
     letter-spacing: normal;
-    position: absolute;
-    top: -65%;
-    font-size: 3rem;
+    font-size: 4rem;
     margin: 0;
     padding: 0;
     color: hsl(345, 95%, 68%);
+    line-height: 0;
+    position: absolute;
+    bottom: 60px;
 }
 
 .ballDetailLeft{
@@ -68,4 +81,12 @@
     width: 10%;
     background-color: hsl(234, 17%, 12%);
     border-radius: 10px 0px 0px 10px;
+}
+
+.timeText {
+    font-family: 'Red Hat Text', serif;
+    color: white;
+    letter-spacing: 0.3rem;
+    font-size: 0.75rem;
+    color: hsl(237, 18%, 59%)
 }

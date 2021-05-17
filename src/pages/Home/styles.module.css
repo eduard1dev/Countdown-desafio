@@ -17,8 +17,17 @@
     background-position: bottom;
 }
 
-.container span{
+.container > span{
     font-family: 'Red Hat Text', serif;
     color: white;
     letter-spacing: 0.35rem;
+    position: absolute;
+    font-size: 1.5rem;
+    top: 30%;
+}
+
+.containerCounts {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
 }
